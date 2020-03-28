@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hand</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <video id="video" class="game-layer video" autoplay="autoplay"></video>
+    <canvas id="canvas" class="game-layer overlay"></canvas>
+    <div class="game-layer hud">
+      <p id="time" class="score">0</p>
+    </div>
+    <div id="fade" class="game-layer fade"></div>
+    <div id="menu" class="game-layer menu">
+      <h1 class="title">Hand</h1>
+      <p class="info">Avoid getting infected by Corona. Move your hand in front of your web cam to play.</p>
+      <p id="highscore" class="info highscore">Highscore: 0</p>
+      <button id="start-button" class="start-button">Start</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
+  <script src="pid-controller.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
